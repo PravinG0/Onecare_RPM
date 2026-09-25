@@ -6,7 +6,7 @@ import { ShieldCheck, Cloud, CheckCircle, Database } from 'lucide-react';
 
 export function WhyOneCareSection() {
   return (
-    <section id="why" className="w-full bg-white py-20 lg:py-28 relative border-b border-gray-100">
+    <section id="why" className="w-full bg-gradient-to-b from-accent-soft to-white py-20 lg:py-28 relative border-b border-accent-border">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         {/* Section Header */}
         <div className="max-w-3xl mb-16 text-left">

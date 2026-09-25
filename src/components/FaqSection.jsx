@@ -12,7 +12,7 @@ export function FaqSection() {
   };
 
   return (
-    <section id="faq" className="w-full bg-bg-alt py-20 lg:py-28 relative border-b border-gray-200/70">
+    <section id="faq" className="w-full bg-accent-soft py-20 lg:py-28 relative border-b border-accent-border">
       <div className="max-w-4xl mx-auto px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-14">

@@ -6,7 +6,7 @@ import { Shield, Activity, Radio, HeartHandshake } from 'lucide-react';
 
 export function UseCasesSection() {
   return (
-    <section className="w-full bg-bg-alt py-20 lg:py-28 border-b border-gray-200/70 relative">
+    <section className="w-full bg-accent-soft py-20 lg:py-28 border-b border-accent-border relative">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         {/* Section Header */}
         <div className="max-w-3xl mb-14 text-left">

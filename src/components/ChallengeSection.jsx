@@ -6,7 +6,7 @@ import { ArrowUpRight, AlertCircle } from 'lucide-react';
 
 export function ChallengeSection() {
   return (
-    <section id="challenges" className="w-full bg-bg-alt py-20 lg:py-28 relative">
+    <section id="challenges" className="w-full bg-accent-soft py-20 lg:py-28 relative">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         {/* Section Header (Slide 3 Style) */}
         <div className="max-w-3xl mb-14 text-left">

@@ -8,10 +8,13 @@ import { Reveal } from './ui/Reveal';
 
 export function Hero() {
   return (
-    <section className="relative w-full bg-white overflow-hidden pt-8 lg:pt-10">
+    <section className="relative w-full bg-gradient-to-br from-accent-tint via-accent-soft to-white overflow-hidden pt-8 lg:pt-10">
       {/* Background Architectural Mesh & Dotted Texture */}
-      <div className="absolute top-0 right-0 w-1/2 h-full bg-dot-matrix opacity-25 pointer-events-none" />
-      <div className="absolute -top-32 -right-32 w-96 h-96 rounded-full bg-accent/5 blur-3xl pointer-events-none" />
+      <div className="absolute inset-0 bg-dot-matrix opacity-[0.08] pointer-events-none" />
+      
+      {/* Enhanced Pink Glow Orbs */}
+      <div className="absolute -top-40 -right-40 w-[40rem] h-[40rem] rounded-full bg-accent blur-[120px] opacity-20 pointer-events-none" />
+      <div className="absolute top-1/2 -left-40 w-[30rem] h-[30rem] rounded-full bg-accent blur-[120px] opacity-15 pointer-events-none" />
 
       {/* Top Integrated Branding Bar */}
       <div className="max-w-7xl mx-auto px-6 lg:px-12 mb-8">
@@ -47,8 +50,11 @@ export function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
           {/* Left Column: Visual 3D Stack + Telemetry HUD Card */}
           <div className="lg:col-span-5 order-2 lg:order-1 relative">
+            {/* Ambient background glow behind the card */}
+            <div className="absolute -inset-4 rounded-[2rem] bg-gradient-to-tr from-accent to-accent-tint blur-2xl opacity-30 pointer-events-none" />
+            
             {/* Angular Faceted Background Card Frame */}
-            <div className="relative rounded-3xl bg-gray-50 border border-gray-200/80 p-3 sm:p-4 shadow-xl overflow-hidden">
+            <div className="relative rounded-3xl bg-white/90 backdrop-blur-sm border border-accent/20 p-3 sm:p-4 shadow-2xl overflow-hidden">
               {/* Subtle background 3D graphic watermark */}
               <div className="absolute top-0 right-0 w-full h-full opacity-30 pointer-events-none overflow-hidden">
                 <img

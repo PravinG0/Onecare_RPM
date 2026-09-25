@@ -6,7 +6,7 @@ import { Reveal } from './ui/Reveal';
 
 export function ClosingCta() {
   return (
-    <section id="demo" className="w-full bg-white py-16 lg:py-24 relative overflow-hidden">
+    <section id="demo" className="w-full bg-gradient-to-b from-white to-accent-soft py-16 lg:py-24 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         {/* Full-Bleed Dark Slate Presentation Card */}
         <Reveal>

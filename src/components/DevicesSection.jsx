@@ -29,7 +29,7 @@ export function DevicesSection() {
   }, []);
 
   return (
-    <section id="devices" className="w-full bg-white py-20 lg:py-28 border-b border-gray-100 relative">
+    <section id="devices" className="w-full bg-gradient-to-b from-white to-accent-soft py-20 lg:py-28 border-b border-accent-border relative">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
