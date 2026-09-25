@@ -23,7 +23,7 @@ export function Button({
 
   const variantClasses = {
     primary:
-      'bg-accent text-white hover:bg-accent-hover shadow-md hover:shadow-glow-accent hover:-translate-y-0.5 active:translate-y-0',
+      'bg-gradient-to-r from-[#FF5196] to-[#2E68FF] hover:from-[#E63E82] hover:to-[#1A50E5] text-white shadow-md shadow-[#2E68FF]/20 hover:shadow-lg hover:shadow-[#FF5196]/30 hover:-translate-y-0.5 active:translate-y-0',
     secondary:
       'bg-white text-slate-dark border border-gray-300 hover:border-accent hover:text-accent-ink hover:bg-gray-50 active:bg-gray-100',
     dark:

@@ -277,7 +277,7 @@ export function HeroDesign2() {
           <div className="flex flex-wrap items-center justify-center gap-3 mb-5">
             <a
               href="#demo"
-              className="inline-flex items-center gap-2 px-7 py-3 rounded-full bg-accent text-white font-bold text-xs sm:text-sm tracking-wide shadow-xl shadow-accent/30 hover:shadow-accent/50 hover:scale-[1.02] active:scale-[0.98] transition-all duration-200"
+              className="inline-flex items-center gap-2 px-7 py-3 rounded-full bg-gradient-to-r from-[#FF5196] to-[#2E68FF] hover:from-[#E63E82] hover:to-[#1A50E5] text-white font-bold text-xs sm:text-sm tracking-wide shadow-xl shadow-[#2E68FF]/30 hover:shadow-[#FF5196]/50 hover:scale-[1.02] active:scale-[0.98] transition-all duration-200"
             >
               <span>{hero.primaryCta}</span>
               <ArrowRight className="w-4 h-4" />
