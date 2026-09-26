@@ -65,7 +65,7 @@ export function HowItWorks() {
                       : 'bg-white/5 border-white/10 hover:bg-white/10 hover:border-white/20'
                   }`}
                 >
-                  <div className="flex items-start gap-4">
+                  <div className="flex items-center gap-4">
                     {/* Hexagon / Pill Number Badge */}
                     <div
                       className={`w-11 h-11 rounded-xl shrink-0 flex items-center justify-center font-mono font-black text-sm transition-colors ${
@@ -77,25 +77,20 @@ export function HowItWorks() {
                       {stepLabel}
                     </div>
 
-                    <div className="flex-1 min-w-0">
-                      <div className="flex items-center justify-between">
-                        <span className="text-[11px] font-mono uppercase tracking-widest text-accent font-bold">
-                          {step.step || `Phase 0${idx + 1}`}
-                        </span>
-                        {isActive && (
-                          <span className="text-[10px] font-bold uppercase tracking-wider bg-accent/20 text-accent px-2 py-0.5 rounded-full border border-accent/40">
-                            Active Step
-                          </span>
-                        )}
-                      </div>
-
+                    <div className="flex-1 min-w-0 flex items-center justify-between gap-4">
                       <h3
-                        className={`text-base font-bold mt-1 leading-snug transition-colors ${
+                        className={`text-base font-bold leading-snug transition-colors ${
                           isActive ? 'text-white' : 'text-gray-300 group-hover:text-white'
                         }`}
                       >
                         {step.title}
                       </h3>
+                      
+                      {isActive && (
+                        <span className="shrink-0 text-[10px] font-bold uppercase tracking-wider bg-accent/20 text-accent px-2 py-0.5 rounded-full border border-accent/40">
+                          Active Step
+                        </span>
+                      )}
                     </div>
                   </div>
                 </div>
