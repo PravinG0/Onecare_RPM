@@ -96,10 +96,6 @@ export function HowItWorks() {
                       >
                         {step.title}
                       </h3>
-
-                      <p className="mt-1.5 text-xs sm:text-sm text-gray-400 leading-relaxed">
-                        {step.desc}
-                      </p>
                     </div>
                   </div>
                 </div>
