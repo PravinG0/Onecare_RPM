@@ -188,23 +188,23 @@ export function HeroDesign2() {
   };
 
   return (
-    <section className="relative w-full min-h-[92vh] bg-[#06080F] text-white overflow-hidden flex flex-col justify-between border-b border-slate-800/80">
+    <section className="relative w-full min-h-[92vh] bg-gradient-to-br from-indigo-50 via-white to-white text-slate-800 overflow-hidden flex flex-col justify-between border-b border-indigo-100">
       
       {/* Full-Bleed Atmospheric Medical Backdrop with Vignettes */}
       <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
         <img
           src="/assets/hero-workstation.jpg"
           alt="Remote Patient Monitoring Workstation"
-          className="w-full h-full object-cover object-center grayscale contrast-125 brightness-[0.35] scale-105"
+          className="w-full h-full object-cover object-center grayscale contrast-125 opacity-[0.08] scale-105"
         />
         {/* Cinematic Multi-Stop Lighting Gradients */}
-        <div className="absolute inset-0 bg-gradient-to-b from-[#06080F]/90 via-[#06080F]/70 to-[#06080F]" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_75%_50%_at_50%_35%,rgba(85,99,235,0.22),transparent_75%)]" />
-        <div className="absolute inset-0 bg-dot-matrix-light opacity-[0.03]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-white/90 via-white/70 to-white/90" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_75%_50%_at_50%_35%,rgba(85,99,235,0.1),transparent_75%)]" />
+        <div className="absolute inset-0 bg-dot-matrix opacity-[0.04]" />
       </div>
 
       {/* Top Integrated Branding & Route Navigation Bar */}
-      <div className="w-full border-b border-white/10 bg-black/40 backdrop-blur-md relative z-30">
+      <div className="w-full border-b border-indigo-100 bg-white/60 backdrop-blur-md relative z-30">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 py-3 flex flex-wrap items-center justify-between gap-4">
           
           {/* OneCare Brand Logo on Crisp White Badge */}
@@ -220,7 +220,7 @@ export function HeroDesign2() {
                 className="h-7 sm:h-8 object-contain"
               />
             </a>
-            <span className="hidden sm:inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[11px] font-mono text-gray-300 bg-white/5 border border-white/10">
+            <span className="hidden sm:inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[11px] font-mono text-slate-600 bg-slate-100 border border-slate-200">
               <span className="w-1.5 h-1.5 rounded-full bg-accent" />
               Continuous Hospital-to-Home RPM
             </span>
@@ -230,7 +230,7 @@ export function HeroDesign2() {
           <div className="flex items-center gap-3">
             <a
               href="/"
-              className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/5 hover:bg-white/10 border border-white/15 text-gray-300 text-xs font-mono transition-all"
+              className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100 hover:bg-slate-200 border border-slate-200 text-slate-600 text-xs font-mono transition-all"
             >
               <ArrowLeft className="w-3.5 h-3.5" />
               <span>Design 1 (Rose)</span>
@@ -257,9 +257,9 @@ export function HeroDesign2() {
 
         {/* Monumental Headline */}
         <Reveal delay={0.12}>
-          <h1 className="text-3xl sm:text-5xl lg:text-[50px] font-extrabold text-white leading-[1.1] tracking-tight mb-3 max-w-3xl drop-shadow-lg">
+          <h1 className="text-3xl sm:text-5xl lg:text-[50px] font-extrabold text-slate-900 leading-[1.1] tracking-tight mb-3 max-w-3xl">
             Your patients are at home. <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent via-indigo-200 to-white">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent to-pink-500">
               Your care continues without interruption.
             </span>
           </h1>
@@ -267,7 +267,7 @@ export function HeroDesign2() {
 
         {/* Refined Subtitle */}
         <Reveal delay={0.18}>
-          <p className="text-sm sm:text-base text-gray-300 leading-relaxed max-w-2xl mx-auto mb-5 font-normal">
+          <p className="text-sm sm:text-base text-slate-600 leading-relaxed max-w-2xl mx-auto mb-5 font-normal">
             {hero.sub}
           </p>
         </Reveal>
@@ -285,7 +285,7 @@ export function HeroDesign2() {
 
             <a
               href="#challenges"
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white/5 hover:bg-white/10 border border-white/20 text-gray-200 hover:text-white font-semibold text-xs sm:text-sm tracking-wide backdrop-blur-md transition-all duration-200"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white hover:bg-slate-50 border border-slate-200 text-slate-700 font-semibold text-xs sm:text-sm tracking-wide shadow-sm transition-all duration-200"
             >
               <span>{hero.secondaryCta}</span>
             </a>
@@ -297,28 +297,28 @@ export function HeroDesign2() {
         {/* Zero fake cards, zero text clutter — Pure dynamic medical telemetry        */}
         {/* ========================================================================= */}
         <Reveal delay={0.3} className="w-full max-w-4xl">
-          <div className="w-full rounded-2xl bg-black/55 border border-white/15 backdrop-blur-xl p-3.5 sm:p-4 shadow-2xl ring-1 ring-white/10 text-left">
+          <div className="w-full rounded-2xl bg-white/80 border border-indigo-100/60 backdrop-blur-xl p-3.5 sm:p-4 shadow-2xl ring-1 ring-black/5 text-left">
             
             {/* Bio-Signal Header & Interactive Switcher */}
-            <div className="flex flex-wrap items-center justify-between gap-2 pb-2.5 border-b border-white/10 text-xs font-mono">
+            <div className="flex flex-wrap items-center justify-between gap-2 pb-2.5 border-b border-slate-200 text-xs font-mono">
               
-              <div className="flex items-center gap-2 text-gray-300">
+              <div className="flex items-center gap-2 text-slate-600">
                 <Radio className="w-3.5 h-3.5 text-accent animate-pulse" />
-                <span className="font-bold text-white text-[11px] sm:text-xs tracking-wide">
+                <span className="font-bold text-slate-800 text-[11px] sm:text-xs tracking-wide">
                   Active Continuous Bio-Stream
                 </span>
                 <span className="hidden sm:inline-block text-gray-500">·</span>
-                <span className="hidden sm:inline-block text-[11px] text-gray-400">Glide cursor across telemetry</span>
+                <span className="hidden sm:inline-block text-[11px] text-slate-500">Glide cursor across telemetry</span>
               </div>
 
               {/* Multi-Signal Waveform Mode Selector */}
-              <div className="inline-flex items-center rounded-lg bg-white/5 p-0.5 border border-white/10 gap-1">
+              <div className="inline-flex items-center rounded-lg bg-slate-100 p-0.5 border border-slate-200 gap-1">
                 <button
                   onClick={() => setActiveSignal('cardiac')}
                   className={`px-2.5 py-1 rounded-md text-[10px] sm:text-[11px] font-mono transition-all ${
                     activeSignal === 'cardiac'
                       ? 'bg-accent text-white font-bold shadow'
-                      : 'text-gray-400 hover:text-white'
+                      : 'text-slate-500 hover:text-slate-800 hover:bg-slate-200/50'
                   }`}
                 >
                   Cardiac Lead II
@@ -328,7 +328,7 @@ export function HeroDesign2() {
                   className={`px-2.5 py-1 rounded-md text-[10px] sm:text-[11px] font-mono transition-all ${
                     activeSignal === 'pleth'
                       ? 'bg-accent text-white font-bold shadow'
-                      : 'text-gray-400 hover:text-white'
+                      : 'text-slate-500 hover:text-slate-800 hover:bg-slate-200/50'
                   }`}
                 >
                   Pulse Pleth (SpO₂)
@@ -338,7 +338,7 @@ export function HeroDesign2() {
                   className={`px-2.5 py-1 rounded-md text-[10px] sm:text-[11px] font-mono transition-all ${
                     activeSignal === 'arterial'
                       ? 'bg-accent text-white font-bold shadow'
-                      : 'text-gray-400 hover:text-white'
+                      : 'text-slate-500 hover:text-slate-800 hover:bg-slate-200/50'
                   }`}
                 >
                   Arterial BP Wave
@@ -369,16 +369,16 @@ export function HeroDesign2() {
             </div>
 
             {/* Ultra-Clean 3-Node Architecture Strip */}
-            <div className="pt-2.5 border-t border-white/10 grid grid-cols-1 sm:grid-cols-3 gap-2 text-[11px] font-mono text-gray-300">
+            <div className="pt-2.5 border-t border-slate-200 grid grid-cols-1 sm:grid-cols-3 gap-2 text-[11px] font-mono text-slate-600">
               <div className="flex items-center gap-2 px-1">
                 <span className="w-1.5 h-1.5 rounded-full bg-accent" />
                 <span>Patient at Home: Cellular Auto-Link</span>
               </div>
-              <div className="flex items-center gap-2 px-1 sm:justify-center border-t sm:border-t-0 sm:border-x border-white/10">
+              <div className="flex items-center gap-2 px-1 sm:justify-center border-t sm:border-t-0 sm:border-x border-slate-200">
                 <ShieldCheck className="w-3.5 h-3.5 text-accent" />
                 <span>OneCare Sovereign Engine (India)</span>
               </div>
-              <div className="flex items-center gap-2 px-1 sm:justify-end border-t sm:border-t-0 border-white/10">
+              <div className="flex items-center gap-2 px-1 sm:justify-end border-t sm:border-t-0 border-slate-200">
                 <Cpu className="w-3.5 h-3.5 text-accent" />
                 <span>Hospital EMR Direct Ingestion</span>
               </div>
@@ -388,7 +388,7 @@ export function HeroDesign2() {
         </Reveal>
 
         {/* Minimal Bottom Trust Footprint */}
-        <div className="mt-4 flex flex-wrap items-center justify-center gap-6 text-[11px] sm:text-xs text-gray-400 font-mono">
+        <div className="mt-4 flex flex-wrap items-center justify-center gap-6 text-[11px] sm:text-xs text-slate-500 font-mono">
           <span className="flex items-center gap-1.5">
             <CheckCircle2 className="w-3.5 h-3.5 text-accent" />
             Zero Upfront Hardware Cost
