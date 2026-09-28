@@ -73,3 +73,29 @@
   --accent-border: #C7D2FE;
   --accent-glow: rgba(85, 99, 235, 0.28);
 }
+
+.theme-design3 {
+  /* ---- Design 3 Primary Accent (Copied from Design 2: #5563EB - Electric Indigo) ---- */
+  --accent: #5563EB;
+  --accent-hover: #4351DE;
+  --accent-cta: #5563EB;
+  --accent-cta-hover: #4351DE;
+  --accent-ink: #312E81;
+  --accent-soft: #EEF2FF;
+  --accent-tint: #E0E7FF;
+  --accent-border: #C7D2FE;
+  --accent-glow: rgba(85, 99, 235, 0.28);
+}
+
+.theme-design4 {
+  /* ---- Design 4 Primary Accent (Copied from Design 2: #5563EB - Electric Indigo) ---- */
+  --accent: #5563EB;
+  --accent-hover: #4351DE;
+  --accent-cta: #5563EB;
+  --accent-cta-hover: #4351DE;
+  --accent-ink: #312E81;
+  --accent-soft: #EEF2FF;
+  --accent-tint: #E0E7FF;
+  --accent-border: #C7D2FE;
+  --accent-glow: rgba(85, 99, 235, 0.28);
+}

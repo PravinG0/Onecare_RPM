@@ -26,3 +26,4 @@ dist-ssr
 # Raw reference decks & extracted raw assets
 *.pptx
 ref_assets/
+scratch/

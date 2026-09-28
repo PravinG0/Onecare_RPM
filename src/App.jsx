@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { ScrollProgress } from './components/ScrollProgress';
 import { Hero } from './components/Hero';
 import { HeroDesign2 } from './components/HeroDesign2';
+import { HeroDesign3 } from './components/HeroDesign3';
+import { HeroDesign4 } from './components/HeroDesign4';
 import { StatsBar } from './components/StatsBar';
 import { ChallengeSection } from './components/ChallengeSection';
 import { DevicesSection } from './components/DevicesSection';
@@ -13,20 +15,25 @@ import { FaqSection } from './components/FaqSection';
 import { ClosingCta } from './components/ClosingCta';
 
 export default function App() {
-  const [isDesign2, setIsDesign2] = useState(() => {
+  const [currentDesign, setCurrentDesign] = useState(() => {
     if (typeof window !== 'undefined') {
       const p = window.location.pathname.toLowerCase();
       const params = new URLSearchParams(window.location.search);
-      return p.includes('/design2') || params.get('design') === '2';
+      if (p.includes('/design4') || params.get('design') === '4') return '4';
+      if (p.includes('/design3') || params.get('design') === '3') return '3';
+      if (p.includes('/design2') || params.get('design') === '2') return '2';
     }
-    return false;
+    return '1';
   });
 
   useEffect(() => {
     const handleLocationChange = () => {
       const p = window.location.pathname.toLowerCase();
       const params = new URLSearchParams(window.location.search);
-      setIsDesign2(p.includes('/design2') || params.get('design') === '2');
+      if (p.includes('/design4') || params.get('design') === '4') setCurrentDesign('4');
+      else if (p.includes('/design3') || params.get('design') === '3') setCurrentDesign('3');
+      else if (p.includes('/design2') || params.get('design') === '2') setCurrentDesign('2');
+      else setCurrentDesign('1');
     };
 
     window.addEventListener('popstate', handleLocationChange);
@@ -34,14 +41,14 @@ export default function App() {
   }, []);
 
   return (
-    <div className={`min-h-screen bg-white text-brand-body relative flex flex-col font-sans ${isDesign2 ? 'theme-design2' : 'theme-design1'}`}>
+    <div className={`min-h-screen bg-white text-brand-body relative flex flex-col font-sans theme-design${currentDesign}`}>
       {/* Scroll Progress Bar at the top */}
       <ScrollProgress />
 
       {/* Main Content Flow — Without Header and Without Footer */}
       <main className="flex-1 w-full">
-        {/* 1. Hero: Render HeroDesign2 if on /design2, else default Hero */}
-        {isDesign2 ? <HeroDesign2 /> : <Hero />}
+        {/* 1. Hero: Render Hero based on active design */}
+        {currentDesign === '4' ? <HeroDesign4 /> : currentDesign === '3' ? <HeroDesign3 /> : currentDesign === '2' ? <HeroDesign2 /> : <Hero />}
 
         {/* 2. Hero Stats Dark Slate Strip */}
         <StatsBar />
