@@ -4,6 +4,7 @@ import { Hero } from './components/Hero';
 import { HeroDesign2 } from './components/HeroDesign2';
 import { HeroDesign3 } from './components/HeroDesign3';
 import { HeroDesign4 } from './components/HeroDesign4';
+import { HeroDesign5 } from './components/HeroDesign5';
 import { StatsBar } from './components/StatsBar';
 import { ChallengeSection } from './components/ChallengeSection';
 import { DevicesSection } from './components/DevicesSection';
@@ -19,6 +20,7 @@ export default function App() {
     if (typeof window !== 'undefined') {
       const p = window.location.pathname.toLowerCase();
       const params = new URLSearchParams(window.location.search);
+      if (p.includes('/design5') || params.get('design') === '5') return '5';
       if (p.includes('/design4') || params.get('design') === '4') return '4';
       if (p.includes('/design3') || params.get('design') === '3') return '3';
       if (p.includes('/design2') || params.get('design') === '2') return '2';
@@ -30,7 +32,8 @@ export default function App() {
     const handleLocationChange = () => {
       const p = window.location.pathname.toLowerCase();
       const params = new URLSearchParams(window.location.search);
-      if (p.includes('/design4') || params.get('design') === '4') setCurrentDesign('4');
+      if (p.includes('/design5') || params.get('design') === '5') setCurrentDesign('5');
+      else if (p.includes('/design4') || params.get('design') === '4') setCurrentDesign('4');
       else if (p.includes('/design3') || params.get('design') === '3') setCurrentDesign('3');
       else if (p.includes('/design2') || params.get('design') === '2') setCurrentDesign('2');
       else setCurrentDesign('1');
@@ -48,7 +51,7 @@ export default function App() {
       {/* Main Content Flow — Without Header and Without Footer */}
       <main className="flex-1 w-full">
         {/* 1. Hero: Render Hero based on active design */}
-        {currentDesign === '4' ? <HeroDesign4 /> : currentDesign === '3' ? <HeroDesign3 /> : currentDesign === '2' ? <HeroDesign2 /> : <Hero />}
+        {currentDesign === '5' ? <HeroDesign5 /> : currentDesign === '4' ? <HeroDesign4 /> : currentDesign === '3' ? <HeroDesign3 /> : currentDesign === '2' ? <HeroDesign2 /> : <Hero />}
 
         {/* 2. Hero Stats Dark Slate Strip */}
         <StatsBar />

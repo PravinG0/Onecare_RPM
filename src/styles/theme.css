@@ -99,3 +99,16 @@
   --accent-border: #C7D2FE;
   --accent-glow: rgba(85, 99, 235, 0.28);
 }
+
+.theme-design5 {
+  /* ---- Design 5 Primary Accent: Dynamic Indigo & Magenta ---- */
+  --accent: #6366F1;
+  --accent-hover: #4F46E5;
+  --accent-cta: #6366F1;
+  --accent-cta-hover: #4F46E5;
+  --accent-ink: #312E81;
+  --accent-soft: #EEF2FF;
+  --accent-tint: #E0E7FF;
+  --accent-border: #C7D2FE;
+  --accent-glow: rgba(99, 102, 241, 0.28);
+}
